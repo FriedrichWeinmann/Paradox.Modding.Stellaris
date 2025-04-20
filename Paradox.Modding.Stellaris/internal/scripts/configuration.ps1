@@ -1,0 +1,1 @@
+﻿Set-PSFConfig -Fullname 'Paradox.Modding.Stellaris.Installpath' -Value '' -Validation string -Initialize -Description 'Path where the game was installed. Overrides auto-detection.'
