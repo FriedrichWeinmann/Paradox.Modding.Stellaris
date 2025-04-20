@@ -1,4 +1,31 @@
 ﻿function ConvertTo-PdsEdict {
+	<#
+	.SYNOPSIS
+		Converts edict configuration files into edict mod files.
+	
+	.DESCRIPTION
+		Converts edict configuration files into edict mod files.
+		This command is used to read psd1-based configuration files for edicts and convert them into the format Stellaris expects.
+		Generally, this command needs not be called directly and happens automatically during Build-PdxMod.
+
+		For more details on how to define edicts via configuration file, see:
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/tree/master/docs/content/edicts.md
+	
+	.PARAMETER Path
+		Path to the file(s) to build.
+	
+	.PARAMETER ModRoot
+		Root path of the mod you are building.
+		Defaults to the parent folder of the parent folder of the first file specified in -Path.
+	
+	.EXAMPLE
+		PS C:\> ConvertTo-PdsEdict -Path "$PSScriptRoot\common\edicts\*.psd1"
+
+		Builds all .psd1 files in the common\edicts subfolder under the path the current script is placed.
+	
+	.LINK
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/tree/master/docs/content/edicts.md
+	#>
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]

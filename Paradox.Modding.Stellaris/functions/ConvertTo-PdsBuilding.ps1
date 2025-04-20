@@ -1,4 +1,31 @@
 ﻿function ConvertTo-PdsBuilding {
+	<#
+	.SYNOPSIS
+		Converts building configuration files into building mod files.
+	
+	.DESCRIPTION
+		Converts building configuration files into building mod files.
+		This command is used to read psd1-based configuration files for buildings and convert them into the format Stellaris expects.
+		Generally, this command needs not be called directly and happens automatically during Build-PdxMod.
+
+		For more details on how to define buildings via configuration file, see:
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/buildings.md
+	
+	.PARAMETER Path
+		Path to the file(s) to build.
+	
+	.PARAMETER ModRoot
+		Root path of the mod you are building.
+		Defaults to the parent folder of the parent folder of the first file specified in -Path.
+	
+	.EXAMPLE
+		PS C:\> ConvertTo-PdsBuilding -Path "$PSScriptRoot\common\buildings\*.psd1"
+
+		Builds all .psd1 files in the common\buildings subfolder under the path the current script is placed.
+	
+	.LINK
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/buildings.md
+	#>
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]

@@ -13,6 +13,7 @@
 
 		returns the path to where the game is installed.
 	#>
+	[OutputType([string])]
 	[CmdletBinding()]
 	param ()
 	process {
