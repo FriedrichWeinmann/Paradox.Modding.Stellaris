@@ -48,6 +48,7 @@
 			EmpireLimit     = 'empire_limit'
 			CanBeRuined     = 'can_be_ruined'
 			Category        = 'category'
+			BuildingSets    = 'building_sets'
 			Prerequisites   = 'prerequisites'
 			UpgradeTo       = 'upgrades'
 			Upgrades        = 'upgrades'
@@ -63,8 +64,9 @@
 		}
 
 		$typeMap = @{
-			upgrades = 'array'
+			upgrades      = 'array'
 			prerequisites = 'array'
+			building_sets = 'array'
 		}
 	}
 	process {
