@@ -65,6 +65,8 @@ What used to be `mymod_buildings.txt` becomes `mymod_buildings.psd1`.
 }
 ```
 
+> [What's up with "Core"?](../general/core.md)
+
 ## Extra Properties
 
 This configuration adds additional properties to a building not present in the Stellaris defaults:
@@ -117,7 +119,7 @@ The same rules apply to `Upkeep` as do to `Cost`, except that the default resour
 
 ## Aliases
 
-You can freely use regular terminology for the settings, but there are a few aliases for properties of what should/could be on an edict:
+You can freely use regular terminology for the settings, but there are a few aliases for properties of what should/could be on an building:
 
 + Capital --> capital
 + CanBuild --> can_build
@@ -129,6 +131,7 @@ You can freely use regular terminology for the settings, but there are a few ali
 + EmpireLimit --> empire_limit
 + CanBeRuined --> can_be_ruined
 + Category --> category
++ BuildingSets --> building_sets
 + Prerequisites --> prerequisites
 + UpgradeTo --> upgrades
 + Upgrades --> upgrades
