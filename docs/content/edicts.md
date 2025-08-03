@@ -69,6 +69,8 @@ What used to be `mymod_edicts.txt` becomes `mymod_edicts.psd1`.
 
 The explicit usage of EdictCapUsage in the last two edicts will override the defined default.
 
+> [What's up with "Core"?](../general/core.md)
+
 ## Extra Properties
 
 This configuration adds additional properties to an edict not present in the Stellaris defaults:

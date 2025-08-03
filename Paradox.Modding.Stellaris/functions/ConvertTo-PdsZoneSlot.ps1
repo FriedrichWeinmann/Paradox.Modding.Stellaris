@@ -9,7 +9,7 @@
 		Generally, this command needs not be called directly and happens automatically during Build-PdxMod.
 
 		For more details on how to define zoneslots via configuration file, see:
-		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/zoneslots.md
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/zone_slots.md
 	
 	.PARAMETER Path
 		Path to the file(s) to build.
@@ -24,7 +24,7 @@
 		Builds all .psd1 files in the common\zone_slots subfolder under the path the current script is placed.
 	
 	.LINK
-		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/zoneslots.md
+		https://github.com/FriedrichWeinmann/Paradox.Modding.Stellaris/blob/master/docs/content/zone_slots.md
 	#>
 	[CmdletBinding()]
 	param (
